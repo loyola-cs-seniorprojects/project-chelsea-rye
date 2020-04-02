@@ -1,0 +1,230 @@
+Last login: Sun Mar 29 18:51:49 on ttys002
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Ryes-MBP:~ RyeVerille$ ssh rbverille@draco.cs.loyola.edu -Y 
+Password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 5.0.0-25-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Kubernetes 1.18 GA is now available! See https://microk8s.io for docs or
+   install it with:
+
+     sudo snap install microk8s --channel=1.18 --classic
+
+ * Multipass 1.1 adds proxy support for developers behind enterprise
+   firewalls. Rapid prototyping for cloud operations just got easier.
+
+     https://multipass.run/
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+11 packages can be updated.
+8 updates are security updates.
+
+Your Hardware Enablement Stack (HWE) is supported until April 2023.
+Last login: Mon Mar 30 18:36:52 2020 from 96.233.104.96
+rbverille@draco:~$ cd a4-rbverille/
+rbverille@draco:~/a4-rbverille$ ls
+heapmgr.c  Makefile	  questions.txt  test_heap.c
+heapmgr.h  milestone.txt  README.md
+rbverille@draco:~/a4-rbverille$ vi problems.txt
+rbverille@draco:~/a4-rbverille$ ls
+heapmgr.c  Makefile	  problems.txt	 README.md
+heapmgr.h  milestone.txt  questions.txt  test_heap.c
+rbverille@draco:~/a4-rbverille$ vi questions.txt 
+rbverille@draco:~/a4-rbverille$ vi milestones.txt
+rbverille@draco:~/a4-rbverille$ ls
+heapmgr.c  Makefile	   milestone.txt  questions.txt  test_heap.c
+heapmgr.h  milestones.txt  problems.txt   README.md
+rbverille@draco:~/a4-rbverille$ vi milestone.txt
+rbverille@draco:~/a4-rbverille$ rm milestones.txt
+rbverille@draco:~/a4-rbverille$ ls
+heapmgr.c  Makefile	  problems.txt	 README.md
+heapmgr.h  milestone.txt  questions.txt  test_heap.c
+rbverille@draco:~/a4-rbverille$ vi milestone.txt 
+rbverille@draco:~/a4-rbverille$ git add problems.txt 
+rbverille@draco:~/a4-rbverille$ git add milestone.txt 
+rbverille@draco:~/a4-rbverille$ git add questions.txt 
+rbverille@draco:~/a4-rbverille$ git push
+Username for 'https://github.com': rbverille
+Password for 'https://rbverille@github.com': 
+Everything up-to-date
+rbverille@draco:~/a4-rbverille$ git commit milestone.txt -m"design due"
+[master 015a44d] design due
+ 1 file changed, 8 insertions(+)
+ create mode 100644 milestone.txt
+rbverille@draco:~/a4-rbverille$ git commit problems.txt -m"design due"
+[master 36e8d0a] design due
+ 1 file changed, 20 insertions(+)
+ create mode 100644 problems.txt
+rbverille@draco:~/a4-rbverille$ git commit questions.txt -m"design due"
+[master 51a760f] design due
+ 1 file changed, 4 insertions(+)
+ create mode 100644 questions.txt
+rbverille@draco:~/a4-rbverille$ git push
+Username for 'https://github.com': rbverille
+Password for 'https://rbverille@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.30 KiB | 331.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/isaacman-cs366-sp20/a4-rbverille.git
+   a24c680..51a760f  master -> master
+rbverille@draco:~/a4-rbverille$ packet_write_wait: Connection to 144.126.12.228 port 22: Broken pipe
+Ryes-MBP:~ RyeVerille$  ssh rbverille@studentvhost2.cs.loyola.edu
+rbverille@studentvhost2.cs.loyola.edu's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-151-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+15 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sun Mar 29 18:50:33 2020 from 96.233.104.96
+rbverille@studentvhost2:~$ ls
+rbverille@studentvhost2:~$ cd ..
+rbverille@studentvhost2:/home$ cd ..
+rbverille@studentvhost2:/$ cd var
+rbverille@studentvhost2:/var$ cd www
+rbverille@studentvhost2:/var/www$ ls
+aacosta        chew	      estuder	    kb2			mperkins       sflahert
+aapierce-ptak  chobrien       frshaw	    klmatrangola	msettedu       sgandotr
+aballiu        cluster	      hjfranceschi  kmeco		narakeli       sleepstudy
+acadaco        cmmaalouf      html	    knorton		nepierce-ptak  smoore
+agreenbe       cnmeier	      ijleppo	    lalexander2		ojatto	       soundpool
+akhaledan      cpheaning      imrivera1     lawrie		pjsacchet      sqkazmi
+akmaja	       cs482f17grp1   jahart	    librarymonitor	pydja	       star
+alhalarewicz   cs482f17grp2   jajeimo	    listz		raja	       studyabroad
+amartine       cs482f17grp3   jamoutenot    lnichola		raunak	       szkazmi
+amsly	       cschreye       jbennett	    lpcreamer		rbackerman     tbunce
+arschilke      ctaormin       jckitson	    lpmcgovern		rbverille      testhost
+aserensi       damorales      jdbennett     macevedo		rkogut	       tfschlectic
+avpin	       deb	      jlaspesa	    mfmorrow		rmmartino      ttaylord
+bcburger       degreeplanner  jmgreenberg   mgray		rpheenan       wiki
+bjpazienza     digerardi      jnorris	    mheim		rschuere       wquintan
+cbrulins       drobie	      jorochial     mhernandezgonzalez	rsoto1	       zhammons
+cclutton       dsmith	      jpirone	    mlatman		rtoner	       zkazmi
+ccrenfroe      easywork       jsrusso	    mnstangis		rybrainry
+cgeleta        ekepling       jthettleman   mobrien		sarepach
+rbverille@studentvhost2:/var/www$ cd degreeplanner/
+rbverille@studentvhost2:/var/www/degreeplanner$ ls
+html  logs
+rbverille@studentvhost2:/var/www/degreeplanner$ cd html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ ls
+displayCourses.php  index2.html  index.html  index.php
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index2.html
+rbverille@studentvhost2:/var/www/degreeplanner/html$ ls
+displayCourses.php  index2.html  index.html  index.php
+rbverille@studentvhost2:/var/www/degreeplanner/html$ vi index.html
+
+                        <option value = 'name'>'name'</option>
+
+
+                </select>
+
+        </form>
+
+
+        <!-- Drop down menu 
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                        <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-center">
+                        <h6 class = "dropdown-header">Computer Science</h6>
+                        
+
+                        <h6 class = "dropdown-header">Engineering</h6>
+                        
+                        <h6 class = "dropdown-header">Mathematics</h6>
+                        
+                        <h6 class = "dropdown-header">Statistics</h6>
+
+
+
+
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                </ul>
+        
+        </div>
+-->
+
+
+
+
+
+
+
+
+
+
+<!-- Next Button -->
+        <a class="btn btn-primary" id= "next" href="index2.html" role="button">Next</a>
+
+</body>
+</html>
+
