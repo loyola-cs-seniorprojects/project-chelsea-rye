@@ -1,6 +1,6 @@
 # Loyola University Degree Planner
-## CS496 Senior Project
-## By: Chelsea Meier and Rye Verille
+CS496 Senior Project
+By: Chelsea Meier and Rye Verille
 
 ## Overview of the Project
 
