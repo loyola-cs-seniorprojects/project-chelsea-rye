@@ -18,7 +18,8 @@ Dependencies -- what software, libraries, databases, operating systems, etc, are
 - internet access
 
 ## Instructions for Compilation
-To compile the Loyola University Degree Planner website, just reload the webpage. The webpage is degreeplanner.cs.loyola.edu. 
+To compile the Loyola University Degree Planner website, just reload the webpage. The webpage is degreeplanner.cs.loyola.edu.
+(https://degreeplanner.cs.loyola.edu).
 
 ## Instructions for Running
 To run the Loyola University Degree Planner website, go to degreeplanner.cs.loyola.edu and walk through the steps and instructions on it.
