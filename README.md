@@ -12,7 +12,13 @@ In this current version, the first screen of the website has been created. There
 In this current version, the features on the second screen are not yet implemented. Those features include a list of required courses based on the degree/major/minor combination that the user chose on the first screen, the drag and drop feature into each of the 12 sections, the constraints having to do with the drag and drop feature, and the download into a pdf feature.
 
 ## Dependencies
+Dependencies -- what software, libraries, databases, operating systems, etc, are required for compiling and/or running your code? How does one install these dependencies (can be provided via link to instruction page)?
+^^ delete this after answering
+- bootstrap
+- internet access
 
 ## Instructions for Compilation
+To compile the Loyola University Degree Planner website, just reload the webpage. The webpage is degreeplanner.cs.loyola.edu. 
 
 ## Instructions for Running
+To run the Loyola University Degree Planner website, go to degreeplanner.cs.loyola.edu and walk through the steps and instructions on it.
