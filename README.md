@@ -12,7 +12,7 @@ In this current version, the first screen of the website has been created. There
 In this current version, the features on the second screen are not yet implemented. Those features include a list of required courses based on the degree/major/minor combination that the user chose on the first screen, the drag and drop feature into each of the 12 sections, the constraints having to do with the drag and drop feature, and the download into a pdf feature.
 
 ## Dependencies
-THe dependencies used in the project include internet access and bootstrap. Internet access is required for the Loyola University Degree Planner to run. Additionally, Bootstrap is framework imported into the code in order to help build and style the features of the website. Bootstrap is used soley for the developement of the website and therefore there is no required installtion for the user in order to have it work with the website.
+The dependencies used in the project include internet access and bootstrap. Internet access is required for the Loyola University Degree Planner to run. Additionally, Bootstrap is framework imported into the code in order to help build and style the features of the website. Bootstrap is used soley for the developement of the website and therefore there is no required installtion for the user in order to have it work with the website.
 
 ## Instructions for Compilation
 To compile the Loyola University Degree Planner website, simply reload the webpage. The webpage is degreeplanner.cs.loyola.edu.
