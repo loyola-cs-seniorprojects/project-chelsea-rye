@@ -63,7 +63,7 @@ $result= $mysqli->query("select table_name from information_schema.tables where 
 
         function myNewFunction(element){
                 var text = element.options[element.selectedIndex].text;
-                document.getElementById("test").innerHTML = text;
+//                document.getElementById("test").innerHTML = text;
                 
                 var getInput = text;
                 localStorage.setItem("storageName", getInput);
