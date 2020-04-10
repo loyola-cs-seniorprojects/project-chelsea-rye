@@ -15,32 +15,36 @@ if (!$mysqli) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// retrieve the tables names from the degreeplanner database
-//$result= $mysqli->query("select course from $jsvar")?>
+// Retrieve the degree combination the user chose from the drop down menu
+$users_choice = $_POST['degrees'];
 
+echo $users_choice;
 
+// Get the required courses from the database tables based on what the user chose from the drop down menu
+$sql = "SELECT course_title FROM `$users_choice`";
 
+$result = mysqli_query($mysqli, $sql);
 
+                if (mysqli_num_rows($result) > 0)
+                {
+                        while($row = mysqli_fetch_assoc($result))
+                        {
+                                // Display all of the required courses
+                                echo "<br/>", $row['course_title'];
+                        }
+                }
+                else
+                {
+                        echo "Error";
+                }
 
+echo "<br/><strong>", $users_choice, "</strong>";
+?>
 
 <head>
-<script>
-        var option =  localStorage.getItem("storageName");
-        //var o = document.write("the option:",option); 
-
-        //function getChoice(){
-
-        //      window.location.href = "index2.php?name="+ option;
-        //}
-
-
-
-//      xmlhttp.open("GET", "index2.php?option="+option,true);
-//      xmlhttp.send();
-
-
-</script>
 <title>Degree Planner</title>
+
+<!-- Style the second screen -->
 <style>
 #coursecol{
     display: inline-block;
@@ -74,45 +78,11 @@ display: table; width: 100%;
 
 </style>
 </head>
-
-<body>
-        <?php
-                //this holds the users degree combo choice      
-                $jsvar = "<script>document.write(localStorage.getItem('storageName'))</script>";
-                echo "your cvar=";
-                echo $jsvar;
-
-                //$sql = "SELECT course_title FROM `".$jsvar."%`";
-                $sql = "SELECT course_title FROM `$jsvar`";
-
-                //$sql = "SELECT course_title FROM `BS Computer Science Major`";
-
-                echo $sql;
-                $result = mysqli_query($mysqli, $sql);
-
-                if (mysqli_num_rows($result) > 0)
-                {
-                        while($row = mysqli_fetch_assoc($result))
-                        {
-                                echo "<br/>", $row['course_title'];
-                        }
-                }
-                else
-                {
-                        echo "Error";
-                }
-        ?>
-
-        <h4 id =degree> 
-                <script>
-                         document.getElementById('degree').innerHTML = option;
-                </script>
-        </h4>
-
-
+        <!-- Create the course column that will hold all of the required courses for the chosen degree/major/minor combination -->
         <div id= coursecol >
         </div>
 
+        <!-- Create the 12 sections (8 semesters and 4 summers) -->
         <table style="width:80%">
                 <tr id = years>
                         <th align = center>Freshman</th>
@@ -164,7 +134,6 @@ display: table; width: 100%;
                         <td class = boxes></td>
                         <td class = boxes></td>
                 </tr>
-
         </table>
 
 </body>
