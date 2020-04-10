@@ -58,7 +58,7 @@ if (!$mysqli) {
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
 }
 .boxes{
-        height:120px;
+        height:180px;
         border: solid black;
         }
 
@@ -121,10 +121,10 @@ display: table; width: 100%;
                         <th>Senior</th>
                 </tr>
                 <tr>
-                        <th>Semester 1</th>
-                        <th>Semester 1</th>
-                        <th>Semester 1</th>
-                        <th>Semester 1</th>
+                        <th>Fall Semester</th>
+                        <th>Fall Semester</th>
+                        <th>Fall Semester</th>
+                        <th>Fall Semester</th>
                 </tr>
 
 
@@ -137,10 +137,10 @@ display: table; width: 100%;
 
 
                  <tr>
-                        <th>Semester 2</th>
-                        <th>Semester 2</th>
-                        <th>Semester 2</th>
-                        <th>Semester 2</th>
+                        <th>Spring Semester</th>
+                        <th>Spring Semester</th>
+                        <th>Spring Semester</th>
+                        <th>Spring Semester</th>
                 </tr>
 
                 <tr>
@@ -152,10 +152,10 @@ display: table; width: 100%;
 
 
                  <tr>
-                        <th>Semester 3</th>
-                        <th>Semester 3</th>
-                        <th>Semester 3</th>
-                        <th>Semester 3</th>
+                        <th>Summer</th>
+                        <th>Summer</th>
+                        <th>Summer</th>
+                        <th>Summer</th>
                 </tr>
 
                 <tr>
@@ -165,19 +165,6 @@ display: table; width: 100%;
                         <td class = boxes></td>
                 </tr>
 
- <tr>
-                        <th>Semester 4</th>
-                        <th>Semester 4</th>
-                        <th>Semester 4</th>
-                        <th>Semester 4</th>
-                </tr>
-                
-                <tr>
-                        <td class = boxes></td>
-                        <td class = boxes></td>
-                        <td class = boxes></td>
-                        <td class = boxes></td>
-                </tr>
         </table>
 
 </body>
