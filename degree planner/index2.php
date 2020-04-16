@@ -15,45 +15,28 @@ if (!$mysqli) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Retrieve the degree combination the user chose from the drop down menu
-$users_choice = $_POST['degrees'];
-
-echo $users_choice;
-
-// Get the required courses from the database tables based on what the user chose from the drop down menu
-$sql = "SELECT course_title FROM `$users_choice`";
-
-$result = mysqli_query($mysqli, $sql);
-
-                if (mysqli_num_rows($result) > 0)
-                {
-                        while($row = mysqli_fetch_assoc($result))
-                        {
-                                // Display all of the required courses
-                                echo "<br/>", $row['course_title'];
-                        }
-                }
-                else
-                {
-                        echo "Error";
-                }
-
-echo "<br/><strong>", $users_choice, "</strong>";
 ?>
 
 <head>
 <title>Degree Planner</title>
 
+<!-- Instructions for the user on top of the second screen -->
+<h3> Drag and drop the courses listed into each of the boxes to create a degree plan </h3>
+
 <!-- Style the second screen -->
 <style>
 #coursecol{
-    display: inline-block;
-    float: left;
+        display: inline-block;
+        float: left;
         border: solid black;
         width: 15%;
-        height: 90%;
         background: grey;
-        opacity: 0.2;}
+        font-weight: italic;
+        color: black;
+        overflow: auto;
+        max-height: 600px;
+background-color: rgba(33,33,33,0.2)
+}
 
 #years{
         background: green;
@@ -78,8 +61,46 @@ display: table; width: 100%;
 
 </style>
 </head>
-        <!-- Create the course column that will hold all of the required courses for the chosen degree/major/minor combination -->
-        <div id= coursecol >
+
+<body>
+<!-- Create the course column that will hold all of the required courses for the chosen degree/major/minor combination -->
+<div id = coursecol style= overflow-y: scroll; height= 400px ;>
+<?php
+
+// Retrieve the degree combination the user chose from the drop down menu
+$users_choice = $_POST['degrees'];
+echo "<strong>", $users_choice, "</strong></br>";
+
+// Get the required courses from the database tables based on what the user chose from the drop down menu
+$sql = "SELECT courseID, course_title FROM `$users_choice`";
+
+$result = mysqli_query($mysqli, $sql);
+
+               if (mysqli_num_rows($result) > 0)
+                {
+                //      $course_list = [];
+                        while($row = mysqli_fetch_assoc($result))
+                        {
+                                //$c[] = array("course_title"=>$row['course_title']);
+                //              $id = $row['courseID'];                         
+                                //$course_list[$id]=$row['course_title'];
+
+                        echo "<br/>", $row['course_title'];
+                        }
+                }
+                else
+                {
+                        echo "Error";
+                }
+
+//              for ( $i = 0, $len = count($course_list); $i < $len; $i += 1)
+//              {
+  //             echo '<tr id='coursecol'>
+    //                                  <td><br>' . $course_list[$i] . '</td>
+      //              </tr>';
+
+//echo "<br/><strong>", $users_choice, "</strong>";
+?>
         </div>
 
         <!-- Create the 12 sections (8 semesters and 4 summers) -->
