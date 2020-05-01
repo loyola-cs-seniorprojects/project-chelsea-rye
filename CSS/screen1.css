@@ -1,0 +1,39 @@
+/* Style the first screen */
+
+#prompt {
+        font-weight: bold;
+        padding-top: 5%;
+}
+
+#title {
+        vertical-align:middle;
+        font-family: Geiorgia;
+        padding-bottom: 20px;
+}
+
+#next {
+        float: right;
+        margin-right: 20px;
+        margin-top: 20%;
+}
+
+#line {
+        padding-bottom: 5%;
+        border-top: 5px solid green;
+}
+
+#degrees {
+        left: 50% !important;
+        right: 50% !important;
+        text-align:center !important;
+}
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#usermanual     {
+        float: right;
+}
