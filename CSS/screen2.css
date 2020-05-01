@@ -1,0 +1,67 @@
+/* Style the second screen */
+
+#coursecol {
+        margin-left: 10px;
+        position: absolute;
+        display: inline-block;
+        float: left;
+        width: 15%;
+        border: 1px solid;
+        font-weight: italic;
+        color: black;
+        max-height: 90%;
+        padding: 10px;
+        background: white;
+        box-shadow: -2px 10px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+#years {
+        background: MediumSeaGreen;
+        background-opacity:0.2;
+        color: black;
+        text-align: center;
+}
+
+#instruction {
+        margin-bottom: 10px;
+}
+
+.boxes {
+        border-left: #e6e6e6 solid 5px;
+        border-right: #e6e6e6 solid 5px;
+        background-color: white;
+        height:140px;
+}
+
+.semesters {
+        font-size: 10px;
+        border-left: #e6e6e6 solid 5px;
+        border-right: #e6e6e6 solid 5px;
+        text-align: center;
+}
+
+#years {
+        background: MediumSeaGreen;
+        background-opacity:0.2;
+        color: black;
+        text-align: center;
+}
+
+.listitems {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: solid rgba(255, 255, 255, 0.5) 1px;
+        font-size: 10px;
+        z-index: 99;
+        font-family:Lucida Grande;
+        text-align: center;
+        color: black;
+}
+
+.bottom {
+
+        border-bottom:#e6e6e6 solid 5px;
+}
+
+#table {
+        z-index: 10;
+}
