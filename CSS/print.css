@@ -1,0 +1,35 @@
+/* Style the print out of the page */
+
+@media print {
+  /* Have only the course column with the required 
+  courses in it and the table containing the 
+  courses dragged and dropped into it printed out */
+  body * {
+    visibility: hidden;
+  }
+  .table, .table * {
+    visibility: visible;
+  }
+
+  .listitems, .listitems * {
+    visibility: visible;
+  }
+  .listitems {
+    position: relative;
+    /*left: 0;
+    top: 0;*/
+  }
+
+  #coursecol, #coursecol * {
+    visibility: visible;
+  }
+  #coursecol {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+@page {
+  size: A4 landscape;
+}
